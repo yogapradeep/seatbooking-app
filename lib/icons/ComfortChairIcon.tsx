@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function ComfortChairIcon() {
+export default function ComfortChairIcon({
+  className,
+  size,
+}: {
+  className?: string;
+  size?: number;
+}) {
   return (
     <svg
       width="34"
@@ -8,6 +14,7 @@ export default function ComfortChairIcon() {
       viewBox="0 0 34 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M16.1111 5.44446V8.11112H13.4445V9.8889H16.1111V12.5556H17.8889V9.8889H20.5556V8.11112H17.8889V5.44446H16.1111Z"
