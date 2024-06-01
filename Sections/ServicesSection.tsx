@@ -3,7 +3,7 @@ import AffordableIcon from "@/lib/icons/AffordableIcon";
 import CalenderWithStarIcon from "@/lib/icons/CalenderWithStarIcon";
 import ComfortChairIcon from "@/lib/icons/ComfortChairIcon";
 import GymIcon from "@/lib/icons/GymIcon";
-import { IServiceItem } from "@/lib/icons/Interfaces/IServiceItem";
+import { IServiceItem } from "@/lib/Interfaces/IServiceItem";
 import { FaWifi } from "react-icons/fa";
 import { MdSportsTennis } from "react-icons/md";
 import { PiClockClockwiseBold } from "react-icons/pi";
