@@ -1,7 +1,7 @@
+import AffordableIcon from "@/lib/icons/AffordableIcon";
+import CalenderWithStarIcon from "@/lib/icons/CalenderWithStarIcon";
 import ComfortChairIcon from "@/lib/icons/ComfortChairIcon";
-import AffordableIcon from "@/lib/icons/affordableIcon";
-import CalenderWithStarIcon from "@/lib/icons/calenderWithStarIcon";
-import GymIcon from "@/lib/icons/gymIcon";
+import GymIcon from "@/lib/icons/GymIcon";
 import Image from "next/image";
 import React from "react";
 import { CgGym } from "react-icons/cg";
@@ -40,7 +40,7 @@ export default function page() {
           <p className="font-small">
             font-small - desktop: 14px, tablet: 12px, mobile: 12px
           </p>
-          <p className="font-small">
+          <p className="font-verysmall">
             font-verysmall - desktop: 12px, tablet: 8px, mobile: 8px
           </p>
           <h1 className="text-primary">text to test (Primary)</h1>

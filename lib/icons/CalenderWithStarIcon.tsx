@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function CalenderWithStarIcon() {
+export default function CalenderWithStarIcon({
+  className,
+  size,
+}: {
+  className?: string;
+  size?: number;
+}) {
   return (
     <svg
       width="28"
@@ -8,6 +14,7 @@ export default function CalenderWithStarIcon() {
       viewBox="0 0 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <path
         d="M19 9L21.8676 13.938L28 14.729L23.5 18.573L24.625 24L19 21.438L13.375 24L14.5 18.573L10 14.729L16.3 13.938L19 9Z"

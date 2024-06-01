@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a{
+  color: inherit;
+}
+
 /* Default font size for desktop */
 :root {
   --font-size-heading: 36px; 
@@ -13,8 +17,8 @@
   --font-size-small:14px;
   --font-size-verysmall:12px;
 }
-/* Font size for tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Font size for tablet and extended upto 1300px  */
+@media (min-width: 768px) and (max-width: 1300px) {
   :root {
     --font-size-heading: 30px;
     --font-size-subheading: 18px;
@@ -26,7 +30,7 @@
 }
 
 /* Font size for mobile */
-@media ( max-width: 767px) { /* Adjust this value to your breakpoint */
+@media ( max-width: 767px) { 
   :root {
     
     --font-size-heading: 24px; 
@@ -67,4 +71,52 @@ font-size: var(--font-size-subheading);
 
 .fs_58{
   font-size: 58px;
+}
+
+.yellow-border{
+  border-color: #FFC422;
+}
+
+
+
+.p_12{
+  padding: 12px;
+}
+
+.service-text-container{
+  width: 250px;
+}
+@media ( max-width: 767px) { 
+.service-text-container{
+  width: 154px;
+}
+.service-text{
+  font-size: 14px !important;
+}
+}
+
+
+/* for tablet */
+@media (min-width: 768px) and (max-width: 1300px) {
+  .hero-text{
+font-size: 20px !important;
+  }
+  .service-text-container{
+    width: 220px;
+  }
+}
+/* for tablet end */
+
+.footer-text{
+  background-color: #222E34;
+  color:#DDDDDD ;
+}
+
+@media (min-width: 768px)  {
+.footer-image-container{
+margin-top: -130px;
+}
+.footer-image-card{
+  margin-top: 130px;
+}
 }
