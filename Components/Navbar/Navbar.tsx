@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import logo from "../../public/assets/logo.png";
-import { MdPhone } from "react-icons/md";
 import { Button } from "react-bootstrap";
+import { MdPhone } from "react-icons/md";
+import logo from "../../public/assets/logo.png";
 
 export default function Navbar() {
   return (
@@ -24,7 +23,7 @@ export default function Navbar() {
               <Button
                 type="button"
                 variant="outline-secondary"
-                className="yellow-icon px-2 py-1 yellow-border"
+                className="yellow-icon px-2 py-1 border-primary-btn"
               >
                 <MdPhone size={18} />
               </Button>

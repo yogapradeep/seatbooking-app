@@ -46,7 +46,10 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services-section" className="my-5 pt-4 container px-3 ">
+    <section
+      id="services-section"
+      className="my-5 pt-4 pt-md-5 container px-3 "
+    >
       <h2 className="text-heading fw-bold mb-4 pb-2 pb-md-4">
         Why Choose us?{" "}
       </h2>
