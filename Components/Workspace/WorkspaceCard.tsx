@@ -1,4 +1,5 @@
 import { IWorkspaceDetails } from "@/lib/Interfaces/IWorkspaceDetails";
+import { useRouter } from "next/navigation";
 import { Button, Card, CardBody } from "react-bootstrap";
 import { IoDiamondOutline } from "react-icons/io5";
 import {
@@ -11,6 +12,7 @@ export default function WorkspaceCard({
 }: {
   workspace: IWorkspaceDetails;
 }) {
+  const router = useRouter();
   const discountValue = workspace.day_pass_discounts_percentage["10"].value;
   const bulkPassPrice = Math.round(
     workspace.day_pass_price * (1 - discountValue / 100) * 10
@@ -57,6 +59,7 @@ export default function WorkspaceCard({
             <Button
               type="button"
               variant="outline-secondary"
+              onClick={() => router.push(`workspace/${workspace.id}`)}
               className="d-flex align-items-center justify-content-between  p-2 p-md-3 bg-gray-light border-secondary-btn buy-button"
               disabled={!workspace.is_day_pass_enabled}
             >
@@ -79,6 +82,7 @@ export default function WorkspaceCard({
             <Button
               type="button"
               variant="outline-secondary"
+              onClick={() => router.push(`workspace/${workspace.id}`)}
               className="d-flex align-items-center justify-content-between p-2 p-md-3 bg-yellow-1 border-primary-btn buy-button position-relative"
               //   disabled={!workspace.is_day_pass_enabled}
             >
