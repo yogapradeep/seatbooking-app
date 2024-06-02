@@ -9,7 +9,7 @@ export default function Footer() {
     <>
       <section
         id="footer-section"
-        className="mt-5 pt-4 container px-3  mb-md-5"
+        className="mt-5 pt-4 container px-3  mb-md-5 pt-md-5"
       >
         <h2 className="text-heading fw-bold mb-4 pb-2 pb-md-4">
           Download our app now

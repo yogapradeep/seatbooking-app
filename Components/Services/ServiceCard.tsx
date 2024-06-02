@@ -1,4 +1,4 @@
-import { IServiceItem } from "@/lib/icons/Interfaces/IServiceItem";
+import { IServiceItem } from "@/lib/Interfaces/IServiceItem";
 
 export default function ServiceCard({
   services,

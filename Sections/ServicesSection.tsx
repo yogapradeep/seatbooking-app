@@ -3,7 +3,7 @@ import AffordableIcon from "@/lib/icons/AffordableIcon";
 import CalenderWithStarIcon from "@/lib/icons/CalenderWithStarIcon";
 import ComfortChairIcon from "@/lib/icons/ComfortChairIcon";
 import GymIcon from "@/lib/icons/GymIcon";
-import { IServiceItem } from "@/lib/icons/Interfaces/IServiceItem";
+import { IServiceItem } from "@/lib/Interfaces/IServiceItem";
 import { FaWifi } from "react-icons/fa";
 import { MdSportsTennis } from "react-icons/md";
 import { PiClockClockwiseBold } from "react-icons/pi";
@@ -46,7 +46,10 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="services-section" className="my-5 pt-4 container px-3 ">
+    <section
+      id="services-section"
+      className="my-5 pt-4 pt-md-5 container px-3 "
+    >
       <h2 className="text-heading fw-bold mb-4 pb-2 pb-md-4">
         Why Choose us?{" "}
       </h2>

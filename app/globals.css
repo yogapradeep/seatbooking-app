@@ -73,14 +73,14 @@ font-size: var(--font-size-subheading);
   font-size: 58px;
 }
 
-.yellow-border{
+.border-primary-btn{
   border-color: #FFC422;
 }
 
 
 
 .p_12{
-  padding: 12px;
+  padding: 12px !important;
 }
 
 .service-text-container{
@@ -95,8 +95,42 @@ font-size: var(--font-size-subheading);
 }
 }
 
+.footer-text{
+  background-color: #222E34;
+  color:#DDDDDD ;
+}
 
-/* for tablet */
+.hero-section{
+  padding-top: 24px;
+}
+.border-secondary-btn{
+border-color: #CEC6C6;
+}
+
+.fs_8{
+  font-size: 8px;
+}
+.discount-badge{
+  top: -12px;
+  left: calc(100% - 75px);
+  transform: translateX(-50%);
+}
+.workspace-badge{
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(100.27deg, #263238 22.66%, #2F4B59 67.67%);
+}
+
+.workspace-image{
+  height: 212px;
+}
+/* only  for mobile */
+@media ( max-width: 767px) { 
+  .buy-button{
+    width: 152px;
+  }
+}
+/* for tablet to desktop */
 @media (min-width: 768px) and (max-width: 1300px) {
   .hero-text{
 font-size: 20px !important;
@@ -107,11 +141,8 @@ font-size: 20px !important;
 }
 /* for tablet end */
 
-.footer-text{
-  background-color: #222E34;
-  color:#DDDDDD ;
-}
 
+/* above from mobile */
 @media (min-width: 768px)  {
 .footer-image-container{
 margin-top: -130px;
@@ -119,4 +150,12 @@ margin-top: -130px;
 .footer-image-card{
   margin-top: 130px;
 }
+.buy-button{
+  width: 200px;
 }
+.workspace-image{
+  height: 270px;
+}
+
+}
+/* for mobile end */
