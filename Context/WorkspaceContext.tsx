@@ -31,8 +31,6 @@ const WorkspaceDetailsProvider = ({ children }: PropsWithChildren<{}>) => {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log("data fromgithub", data);
-
         setWorkspaceDetails(data);
       })
       .catch((error) => {

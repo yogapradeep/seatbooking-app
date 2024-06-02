@@ -11,8 +11,6 @@ export default function WorkspaceCard({
 }: {
   workspace: IWorkspaceDetails;
 }) {
-  const test = workspace.images[0];
-  console.log("test", test);
   const discountValue = workspace.day_pass_discounts_percentage["10"].value;
   const bulkPassPrice = Math.round(
     workspace.day_pass_price * (1 - discountValue / 100) * 10

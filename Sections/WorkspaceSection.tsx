@@ -4,8 +4,6 @@ import { useWorkspaceDetails } from "@/Context/WorkspaceContext";
 
 export default function WorkspaceSection() {
   const context = useWorkspaceDetails();
-  console.log("context", context);
-  console.log("context workdata", context.workspaceDetails);
 
   return (
     <section
